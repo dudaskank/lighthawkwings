@@ -19,8 +19,8 @@ public class GameTest extends DefaultGame {
 
 	public static void main(String[] args) {
 		PatternLayout layout = new PatternLayout("[%5p] %m%n");
-		Logger.getRoot().addAppender(new ConsoleAppender(layout, "System.out"));
-		Logger.getRoot().setLevel(Level.INFO);
+		Logger.getRootLogger().addAppender(new ConsoleAppender(layout, "System.out"));
+		Logger.getRootLogger().setLevel(Level.INFO);
 		Logger.getLogger(NanoClock.class).setLevel(Level.DEBUG);
 		GameTest game = new GameTest();
 		IntroState intro;
