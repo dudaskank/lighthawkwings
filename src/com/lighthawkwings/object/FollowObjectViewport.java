@@ -14,11 +14,9 @@ public class FollowObjectViewport extends AbstractGameObject<Game> {
 		followObject(gameObject);
 	}
 
-	@Override
 	public void paint(Graphics2D g) {
 	}
 
-	@Override
 	public void update(long deltaT) {
 		Rectangle viewPort;
 		/* posiciona o viewport para acompanhar o jogador durante o jogo */
