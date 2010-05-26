@@ -357,7 +357,6 @@ public class DefaultGame implements Game {
 		this.viewPort.setRect(viewPort);
 	}
 
-	@Override
 	public String getGameName() {
 		return gameName;
 	}
@@ -373,7 +372,6 @@ public class DefaultGame implements Game {
 		return properties;
 	}
 
-	@Override
 	public String getGameVersion() {
 		return gameVersion;
 	}

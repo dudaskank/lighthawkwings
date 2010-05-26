@@ -127,7 +127,6 @@ public abstract class AbstractGameState<G extends Game> extends AbstractGameObje
 		return this.objectsList;
 	}
 
-	@Override
 	public void paint(Graphics2D graphics) {
 		Collections.sort(objectsList);
 		for (GameObject gameObject : objectsList) {
@@ -145,7 +144,6 @@ public abstract class AbstractGameState<G extends Game> extends AbstractGameObje
 	 * @param elapsedTime
 	 *            Tempo que se passou desde a última chamada ao método, em ms.
 	 */
-	@Override
 	public void update(long elapsedTime) {
 		for (GameObject gameObject : objectsList) {
 			gameObject.update(elapsedTime);
